@@ -26,7 +26,7 @@ docker build -t neo-cli-testnet:v0.1 https://github.com/NewEconoLab/neo-cli-dock
 
 ## Step 3
 
-Run Shell to Run container and Start neo-cli From Image
+Run Shell to Run container From Image
 
 For Mainnet
 
@@ -40,8 +40,15 @@ For Testnet
 docker run --rm -it -p 20332:20332 -v /home/neo/cli/0:/home/cli/Chain neo-cli-testnet:v0.1 /bin/bash
 </code>
 
-
 ## Step 4
+
+Start neo-cli
+
+<code>
+cd /home/cli && dotnet neo-cli.dll /rpc
+</code>
+
+## Step 5
 
 Mainnet Cli RPC
 

@@ -15,9 +15,3 @@ RUN cd /home/ \
 	&& dotnet restore \
 	&& dotnet publish -c Release \
 	&& cp -r /home/neo-cli/neo-cli/bin/Release/netcoreapp2.0/publish/ /home/cli/
-
-RUN cd /home/cli/ \
-	&& rm -f config.json \
-	&& cp config.testnet.json config.json \
-	&& rm -f protocol.json \
-	&& cp protocol.testnet.json protocol.json

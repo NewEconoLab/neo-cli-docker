@@ -21,3 +21,5 @@ RUN cd /home/cli/ \
 	&& cp config.testnet.json config.json \
 	&& rm -f protocol.json \
 	&& cp protocol.testnet.json protocol.json
+
+RUN cd /home/cli && dotnet neo-cli.dll /rpc

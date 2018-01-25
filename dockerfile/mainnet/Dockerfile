@@ -15,3 +15,5 @@ RUN cd /home/ \
 	&& dotnet restore \
 	&& dotnet publish -c Release \
 	&& cp -r /home/neo-cli/neo-cli/bin/Release/netcoreapp2.0/publish/ /home/cli/
+
+RUN cd /home/cli && dotnet neo-cli.dll /rpc

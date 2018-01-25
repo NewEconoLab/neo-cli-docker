@@ -48,6 +48,8 @@ Start neo-cli
 cd /home/cli && dotnet neo-cli.dll /rpc
 </code>
 
+[Ctrl]+[p]+[q] to exit container with not stop
+
 ## Step 5
 
 Mainnet Cli RPC

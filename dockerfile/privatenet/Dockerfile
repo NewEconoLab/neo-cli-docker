@@ -24,7 +24,7 @@ RUN cd /home/cli/ \
 
 RUN cd /home \
     && git clone https://github.com/NewEconoLab/neo-cli-docker.git \
-    && cp -r /home/neo-cli-docker/dockerfile/privatenet/docs /home/cli/docs\
+    && cp -r /home/neo-cli-docker/dockerfile/privatenet/docs /home/cli/docs \
 	&& rm -rf /home/neo-cli-docker/ \
     && cd /home/cli/ \
 	&& rm -f config.json \

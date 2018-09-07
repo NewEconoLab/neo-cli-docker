@@ -7,6 +7,16 @@ Prepare docker environment
 
 https://docs.docker.com/engine/installation/
 
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+  
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+    
+sudo yum install docker-ce
+
 ## Setp 2
 
 Run Shell to Buld Image 
